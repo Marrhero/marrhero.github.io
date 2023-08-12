@@ -1,0 +1,179 @@
+
+* {
+    box-sizing: border-box;
+  } 
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+}
+
+#main{
+    background-image: url(/img/pocket.gif);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Add media query to resize hero and header/logo */
+
+header {
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+    padding: 5px 10px;
+    padding-bottom: 15px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Try to find a way to move the bg image to center when the screen is below a certain size */
+header li{
+    font-family: font;
+    font-size: 20px;
+
+    display: inline;
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+}
+
+header ul {
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+.logo {
+    margin: 5px;
+    margin-right: 2%;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 26%;
+}
+
+h1 {
+    font-size: 42px;
+    color: white;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: font;
+    src: url(/font/LeagueSpartan-Bold.otf);
+}
+
+.hero {
+    font-family: font;
+    margin: 15% 0;
+    text-align: center;
+    color: white;
+}
+
+.topBar{
+    height: 12px;
+    margin-top: 0;
+}
+
+.midBar{
+    height: 8px;
+    margin-top: 0;
+}
+
+.minBar{
+    height: 5px;
+    margin-top: 0;
+}
+
+.black{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.grey{
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+.gallery1 {
+    flex-shrink: 0;
+
+    background-color: rgba(200, 200, 200, 0.95);
+    padding: 100px 10px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    align-content: center;
+    height: 2000px;
+}
+
+.gallery1 img{
+    margin: 5px 3px;
+    padding: 0;
+    object-fit: contain;
+    border-radius: 4px;
+    width: 23%;
+    
+    object-fit: contain;
+}
+
+.thumbnail {
+  
+    cursor: pointer;
+
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+
+}
+
+.thumbnail:active{
+    transform: scale(1.4);
+    z-index: 999;
+}
+
+
+/*---------------------------------------------------------------------- PAGE 2 LAYOUT -----------------------------------------------------------------------------*/
+
+
+#portfolio{
+    background-color: rgb(60, 60, 60);
+}
+
+.heroPortfolio {
+    font-family: font;
+    margin: 5% 0;
+    text-align: center;
+    color: white;
+}
+
+.entry {
+    padding: 10px;
+    width: 100%;
+    
+    font-family: font;
+}
+
+.thumb {
+    display: inline-block;
+    height: 400px;
+    background-size: cover;
+}
+
+.entry p{
+    display: inline-block;
+    vertical-align: top;
+}

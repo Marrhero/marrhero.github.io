@@ -27,7 +27,7 @@ body {
 
 header {
     margin: 0;
-    background-color: rgb(50, 50, 50);
+    background-color: #333333;
     padding: 5px 10px;
     padding-bottom: 15px;
     width: 100%;
@@ -38,13 +38,16 @@ header {
 }
 
 header li{
-    font-family: font;
-    font-size: 20px;
-
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 22px;
     display: inline;
+  
     margin: 0;
     margin-right: 15px;
     padding: 0;
+
+    color: #BBBBBB;
 }
 
 header ul {
@@ -61,18 +64,23 @@ header ul {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 56px;
     color: white;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 40px;
     margin: 0;
 }
 
 @font-face {
     font-family: font;
-    src: url(/font/LeagueSpartan-Bold.otf);
+    src: url(font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(font/RobotoSlab-VariableFont_wght.ttf);
 }
 
 .hero {
@@ -110,7 +118,7 @@ h2 {
 .gallery1 {
     flex-shrink: 0;
 
-    background-color: rgba(200, 200, 200, 0.95);
+    background-color: #333333;
     padding: 100px 10px;
     margin: 0;
 
@@ -134,6 +142,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
     .gallery1{
         flex-wrap: nowrap;
         height: 6500px;
@@ -169,7 +178,7 @@ h2 {
 
 .heroPortfolio {
     font-family: font;
-    margin: 5% 0;
+    margin: 1% 0;
     text-align: center;
     color: white;
 }

@@ -15,9 +15,13 @@ body {
     background-image: url(/img/pocket.gif);
     background-size: cover;
     
+    background-position: center center;
+
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
 
 /*Add media query to resize hero and header/logo */
 
@@ -33,7 +37,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* Try to find a way to move the bg image to center when the screen is below a certain size */
 header li{
     font-family: font;
     font-size: 20px;
@@ -128,6 +131,17 @@ h2 {
     width: 23%;
     
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .gallery1{
+        flex-wrap: nowrap;
+        height: 6500px;
+    }
+
+    .gallery1 img{
+        width: 80%
+    }
 }
 
 .thumbnail {

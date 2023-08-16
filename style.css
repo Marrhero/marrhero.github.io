@@ -21,10 +21,6 @@ body {
     background-attachment: fixed;
 }
 
-
-
-/*Add media query to resize hero and header/logo */
-
 header {
     margin: 0;
     background-color: #333333;
@@ -79,8 +75,17 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 24px;
     margin: 0;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    color: #BBBBBB;
+    text-decoration: none;
 }
 
 @font-face {
@@ -113,16 +118,6 @@ h2 {
 .minBar{
     height: 5px;
     margin-top: 0;
-}
-
-.black{
-    background-color: rgb(50, 50, 50);
-    color: white;
-}
-
-.grey{
-    background-color: rgb(200, 200, 200);
-    color: black;
 }
 
 .gallery1 {
@@ -174,12 +169,9 @@ h2 {
         font-weight: 350;
         font-size: 16px;
     }
-
-
 }
 
 .thumbnail {
-  
     cursor: pointer;
 
     -webkit-transition-property: all; 
@@ -193,35 +185,95 @@ h2 {
     z-index: 999;
 }
 
-
 /*---------------------------------------------------------------------- PAGE 2 LAYOUT -----------------------------------------------------------------------------*/
-
 
 #portfolio{
     background-color: rgb(60, 60, 60);
 }
 
+.title{
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
+
 .heroPortfolio {
+    width: 60%;
     font-family: font;
-    margin: 1% 0;
+    margin: auto;
     text-align: center;
     color: white;
 }
 
 .entry {
-    padding: 10px;
+    padding: 10px 15px;
     width: 100%;
-    
     font-family: font;
+    color: #BBBBBB;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thumbnailGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.list p{
+    margin-bottom: 0;
 }
 
 .thumb {
     display: inline-block;
     height: 400px;
     background-size: cover;
+    margin-right: 25px;
+}
+
+.bold{
+    font-weight: bold;
+    color: white;
+}
+
+.yellow{
+    color: cyan;
+}
+
+.white{
+    color: white;
 }
 
 .entry p{
     display: inline-block;
     vertical-align: top;
+}
+
+@media (max-width: 768px) {
+
+   .card .thumb{
+    max-width: 95%;
+    height: auto;
+   }
+
+   .card{
+    flex-direction: column;
+   }
+
+   .thumbnailGroup .thumb
+   {
+    margin-top: 15px;
+    max-width: 30%;
+    height: auto;
+   }
 }

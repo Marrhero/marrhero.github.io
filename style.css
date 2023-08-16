@@ -276,4 +276,12 @@ a{
     max-width: 30%;
     height: auto;
    }
+
+   .heroPortfolio h1{
+    font-size: 26px;
+   }
+
+   .heroPortfolio h2{
+    font-size: 18px;
+   }
 }

@@ -98,6 +98,19 @@ a{
     src: url(font/RobotoSlab-VariableFont_wght.ttf);
 }
 
+/* For animation transition */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .hero {
     font-family: font;
     margin: 15% 0;

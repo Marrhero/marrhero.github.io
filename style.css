@@ -34,6 +34,35 @@ header {
 
     justify-content: space-between;
     align-items: baseline;
+    }
+
+footer{
+    margin: 0;
+    background-color: #333333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul{
+    padding: 10px 0;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+footer li{
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 16px;
+
+    display: inline;
+
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+
+    color: #BBBBBB;
 }
 
 header li{
@@ -116,6 +145,8 @@ a{
     margin: 15% 0;
     text-align: center;
     color: white;
+
+    z-index: 2;
 }
 
 .topBar{
@@ -133,6 +164,11 @@ a{
     margin-top: 0;
 }
 
+.space{
+    height: 20px;
+    margin-top: 15px;
+}
+
 .gallery1 {
     flex-shrink: 0;
 
@@ -147,6 +183,8 @@ a{
     align-items: center;
     align-content: center;
     height: 2000px;
+
+    z-index: 10;
 }
 
 .gallery1 img{
@@ -181,6 +219,15 @@ a{
     header li{
         font-weight: 350;
         font-size: 16px;
+    }
+
+    footer li{
+        font-size: 14px;;
+    }
+
+    footer ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
 
@@ -261,7 +308,7 @@ a{
     color: white;
 }
 
-.yellow{
+.cyan{
     color: cyan;
 }
 

@@ -11,6 +11,32 @@ body {
     width: 100%;
 }
 
+.homeHeader{
+    font-size: 34px;
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.welcome{
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.vertical{
+    height: 42px;
+    width: 3px;
+    background-color: white;
+}
+
+.center{
+    width: 50%;
+    margin: auto;
+}
+
 #main{
     background-image: url(/img/pocket.gif);
     background-size: cover;
@@ -149,21 +175,6 @@ a{
     z-index: 2;
 }
 
-.topBar{
-    height: 12px;
-    margin-top: 0;
-}
-
-.midBar{
-    height: 8px;
-    margin-top: 0;
-}
-
-.minBar{
-    height: 5px;
-    margin-top: 0;
-}
-
 .space{
     height: 20px;
     margin-top: 15px;
@@ -250,6 +261,10 @@ a{
 /*---------------------------------------------------------------------- PAGE 2 LAYOUT -----------------------------------------------------------------------------*/
 
 #portfolio{
+    background-color: rgb(60, 60, 60);
+}
+
+#index{
     background-color: rgb(60, 60, 60);
 }
 

@@ -12,28 +12,42 @@ body {
 }
 
 .homeHeader{
-    font-size: 34px;
+    font-size: 45px;
+    height: 50px;
     display: flex;
     flex-direction: row;
+    font-family: font;
 
     width: 50%;
-    margin: auto;
-    text-align: center;
+    align-items: center;
+
+    justify-content: center;
 }
+
 .welcome{
     margin: auto;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .vertical{
-    height: 42px;
-    width: 3px;
+    height: 54px;
+    width: 6px;
     background-color: white;
 }
 
 .center{
+    display: block;
     width: 50%;
+    margin: auto;
+}
+
+.topMargin{
+    margin-top: 45px;
+}
+
+.centerPage{
+    height: 60%;
     margin: auto;
 }
 
@@ -265,7 +279,16 @@ a{
 }
 
 #index{
-    background-color: rgb(60, 60, 60);
+    background-image: url(/img/pocket.gif);
+
+    background-size: cover;
+    
+    background-position: center center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
 }
 
 .title{
